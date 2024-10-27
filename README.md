@@ -30,6 +30,7 @@ The performance is evaluated using BLEU scores, providing a robust measure of tr
 ## Training Parameters
 The models were trained using Fairseq with the following key training parameters:
 
+```bash
 CUDA_VISIBLE_DEVICES=0 fairseq-train ../indic-en-exp/final_bin \
     --max-source-positions=100 \
     --max-target-positions=100 \
@@ -58,6 +59,7 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train ../indic-en-exp/final_bin \
     --update-freq=1 \
     --distributed-world-size 1 \
     --max-tokens 4096
+```
 
 
 ## Performance Metrics
